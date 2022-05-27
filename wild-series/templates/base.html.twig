@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        
+        <title>{% block title %}Welcome!{% endblock %}</title>
+
+        {% block stylesheets %}
+        
+        {% endblock %}
+        
+    </head>
+    <body>
+        <header>
+            {% block header %}{% include 'navbar/_navbar.html.twig' %}{% endblock %}
+        </header>
+        {% block body %}{% endblock %}
+        <aside>
+            {% block aside %}{% endblock %}
+        </aside>
+        <footer>
+            {% block footer %}{% endblock %}
+        </footer>
+    </body>
+        {% block javascripts %}
+           
+        {% endblock %}
+</html>
